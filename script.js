@@ -78,3 +78,14 @@
 
 // console.log(`Вы набрали ${correctCount} из 3`);
 
+// Задача 5
+let symbol = Number(prompt());
+let alphabet = "";
+
+if(symbol > 0 && symbol <=9) {
+    console.log("Цифра");
+} else if(symbol === "a") {
+    console.log("Буква")
+} else {
+    console.log("Неизвестный символ")
+}
