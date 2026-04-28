@@ -79,13 +79,20 @@
 // console.log(`Вы набрали ${correctCount} из 3`);
 
 // Задача 5
-let symbol = Number(prompt());
-let alphabet = "";
+// let symbol = prompt();
+// let regexp = /^[a-z]$/;
+// let num = /^[0-9]$/;
 
-if(symbol > 0 && symbol <=9) {
-    console.log("Цифра");
-} else if(symbol === "a") {
-    console.log("Буква")
-} else {
-    console.log("Неизвестный символ")
-}
+// if(symbol.match(num)) {
+//     console.log("Цифра");
+// } else if(symbol.match(regexp)) {
+//     console.log("Буква")
+// } else {
+//     console.log("Неизвестный символ")
+// }
+
+// Задача 6
+let num = prompt();
+
+let reverse = num.split('').reverse().join('');
+console.log(reverse);
