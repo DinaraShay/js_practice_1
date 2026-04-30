@@ -130,8 +130,21 @@
 // }
 
 // Задача 9
-let num = prompt();
-let symbols = prompt();
+// let num = prompt();
+// let symbols = prompt();
 
-let total = num.split("").join(symbols);
-console.log(total)
+// let total = num.split("").join(symbols);
+// console.log(total)
+
+// Задача 10
+
+let password = prompt();
+
+for(let i = 6; i < 20; i++) {
+    console.log()
+    // if() {
+    //     console.log("Пароль надёжный")
+    // } else {
+    //     console.log("Пароль слабый")
+    // }
+}
