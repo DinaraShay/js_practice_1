@@ -108,24 +108,30 @@
 // });
 
 //Задача 8
-const value = Math.floor(Math.random() * 50) + 1;
-let steps = 7;
-let win = false;
+// const value = Math.floor(Math.random() * 50) + 1;
+// let steps = 7;
+// let win = false;
 
-for (let i = 0; i < steps; i++) {
-    let guess = Number(prompt(`Попытка ${i + 1}. Ваше число:`));
-    if (guess === value) {
-        console.log(`Поздравляю! Вы угадали число ${value} за ${i + 1} попыток!`);
-        win = true;
-        break;
-    } else if (guess > value) {
-        console.log("Загаданное число МЕНЬШЕ.");
-    } else {
-        console.log("Загаданное число БОЛЬШЕ.");
-    }
-}
+// for (let i = 0; i < steps; i++) {
+//     let guess = Number(prompt(`Попытка ${i + 1}. Ваше число:`));
+//     if (guess === value) {
+//         console.log(`Поздравляю! Вы угадали число ${value} за ${i + 1} попыток!`);
+//         win = true;
+//         break;
+//     } else if (guess > value) {
+//         console.log("Загаданное число МЕНЬШЕ.");
+//     } else {
+//         console.log("Загаданное число БОЛЬШЕ.");
+//     }
+// }
 
-if (!win) {
-    console.log(`Ты проиграл! Загаданное число было ${value}.`);
-}
+// if (!win) {
+//     console.log(`Ты проиграл! Загаданное число было ${value}.`);
+// }
 
+// Задача 9
+let num = prompt();
+let symbols = prompt();
+
+let total = num.split("").join(symbols);
+console.log(total)
