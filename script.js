@@ -92,7 +92,19 @@
 // }
 
 // Задача 6
-let num = prompt();
+// let num = prompt();
 
-let reverse = num.split('').reverse().join('');
-console.log(reverse);
+// let reverse = num.split('').reverse().join('');
+// console.log(reverse);
+
+//Задача 7
+let num = prompt();
+let sum = num.split('');
+let total = 0;
+
+sum.forEach((number) => {
+    let numberCount = Number(number);
+    total = total + numberCount;
+});
+
+
