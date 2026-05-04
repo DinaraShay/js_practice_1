@@ -139,12 +139,25 @@
 // Задача 10
 
 let password = prompt();
+let hasDigit = false;
+let hasUpperCase = false;
+let hasSpecial = false;
 
-for(let i = 6; i < 20; i++) {
-    console.log()
-    // if() {
-    //     console.log("Пароль надёжный")
-    // } else {
-    //     console.log("Пароль слабый")
-    // }
+for (let i = 0; i < password.length; i++) {
+    let char = password[i];
+    if (char >= '0' && char <= '9') {
+        hasDigit = true;
+    }
+    if (char >= 'A' && char <= 'Z') {
+        hasUpperCase = true
+    }
+    if ("!@#$%^&*".includes(char)) {
+        hasSpecial = true
+    }
+}
+
+if (hasDigit && hasUpperCase && hasSpecial && password.length >= 6 && password.length <= 20) {
+    console.log("Пароль надёжный");
+} else {
+    console.log("Пароль слабый");
 }
